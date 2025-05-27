@@ -1,0 +1,17 @@
+int lampu1 = 8;  // Pin untuk lampu pertama
+int lampu2 = 9;  // Pin untuk lampu kedua
+
+void setup() {
+  pinMode(lampu1, OUTPUT);
+  pinMode(lampu2, OUTPUT);
+}
+
+void loop() {
+  digitalWrite(lampu1, HIGH);   // Nyalakan lampu 1
+  digitalWrite(lampu2, LOW);    // Matikan lampu 2
+  delay(1000);                  // Tunggu 1 detik
+
+  digitalWrite(lampu1, LOW);    // Matikan lampu 1
+  digitalWrite(lampu2, HIGH);   // Nyalakan lampu 2
+  delay(1000);                  // Tunggu 1 detik
+}
